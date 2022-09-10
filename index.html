@@ -1,0 +1,23 @@
+<script>
+
+    if (sessionStorage.getItem("ID")){
+        const funcao = prompt("Você aceita trabalhar na sua função até que o navio afunde? sim/não").toUpperCase();
+
+
+        (funcao === "SIM")
+        ? localStorage.setItem("função","Comida de tubarão")
+        : localStorage.setItem("função", funcao);
+
+        
+
+    }else alert("Você precisa digitar a sua identificação correta!");
+
+    /*
+    "Alguns acham que tudo aquilo que fazemos nunca é demais e dessa forma nasce a inveja"
+
+    Cuidado com quem você conversa marujo(a)! Nunca se pode confiar cegamente nos outros, principalmente em uma viajem dessas.
+
+    Alguém colocou um mapa do tesouro nos seus pertences e você será julgado por roubo!
+    */
+
+</script>
