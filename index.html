@@ -1,0 +1,29 @@
+<script>
+
+    o1 = "Você"
+    m1 = "encontrou"
+
+    const mapa = prompt("Qual o nome do seu mapa? ").toUpperCase();
+
+
+    switch (mapa) {
+        case "CHOCOLÂNDIA":
+            alert("Parabéns! Você está com o mapa correto!");
+            sessionStorage.setItem("mapa", "chcolândia");
+            break;
+
+        default:
+            alert("Parece que você está com o mapa errado :C");
+            sessionStorage.setItem("mapa", "aleatório");
+            break;
+    }
+
+    /*
+    Após vários dias e muitos perigos finalmente você encontrou o baú do tesouro.
+
+    Que loucura, é plausível que tal segurança possua uma segurança deste nível...
+
+    Será que serei o(a) primeiro(a) a abri-lo?
+    */
+
+</script>
