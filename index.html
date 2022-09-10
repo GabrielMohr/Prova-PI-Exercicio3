@@ -138,6 +138,40 @@
     // 5: Abre-te Sésamo
     
 
+    let chave = Math.floor(Math.random() * (10 - (-10) + 1)) + (-10);
+        tenteOutraVez();
+    
+    function tenteOutraVez(){
+
+        tentativa = parseInt(prompt("Tente adivinhar a combinação do cadeado (+10 a -10):"))
+
+        if (tentativa === chave || tentativas > 4){
+            
+            if (tentativas > 4) alert("Você chegou tão perto, mas parece que o cadeado travou T-T");
+            else{
+                if (sessionStorage.getItem("mapa" !== "CHOCOLÂNDIA")){
+                    b1 = "Que pena!"
+                    b2 = "o"
+                    o2 = "baú"
+                    m2 = "vazio :C"
+                }else{
+                    b1 = "Parabéns!"
+                    b2 = "o"
+                    o2 = "tesouro"
+                    m2 = "escondido!"
+                }
+                sessionStorage.clear();
+                localStorage.clear();
+                
+                document.write(`${b1} ${o1} ${m1} ${b2} ${o2} ${m2}<br><br>
+                Tire um print desta tela com as teclas "Win + Shift + S" e salve-o no card desta tarefa.`);
+            }
+
+
+        }else {
+            tenteOutraVez();
+        }
+    }
     
 
 
