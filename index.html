@@ -73,6 +73,33 @@
     // 3: Sentença de Morte
 
     
+    const rel = prompt("Você se considera inocente ou culpado?").toUpperCase();
+
+    if (rel === "INOCENTE") {
+        switch (localStorage.getItem("função")) {
+            case "Comida de tubarão":
+                alert("Tripulante perdido(a) ao mar!");
+                alert("Você foi deixado ao mar para servir de comida aos tubarões :C");
+                localStorage.setItem("situação", "desespero");
+                break;
+
+            default:
+                alert("Que pena, você chegou tão longe, mas tudo que encontrou foi o terror dos mares, o CRACKEN!");
+                localStorage.setItem("situação", "cracken");
+                break;
+        }
+    }
+
+
+    /*
+    "Alguns nos chamam de loucos, outros dizem ser apenas uma lenda, mas há aqueles que conhecem o significado de perseverança"
+
+    Nunca desista dos seus sonhos...
+
+
+    Viva, encontramos uma ilha... e veja só, o mapa está intacto. Ele possui algumas coisas escritas...
+    */
+
 
 
 
